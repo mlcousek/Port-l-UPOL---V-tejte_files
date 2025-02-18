@@ -1,0 +1,1179 @@
+/* Obecne veci pro STAG predevsim */
+
+/* form-small-inline je formular, ktery je defualtne horizontalni a na malym displeji inline (pouziti ve formulari rozvrhu) */
+.b .form-small-inline .form-group {
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+.b .form-small-inline .form-group label {
+  margin-bottom: 0;
+}
+.b .form-small-inline .form-group input[type="radio"], .b .form-small-inline .form-group input[type="checkbox"] {
+  vertical-align: text-bottom;
+}
+
+.form-small-inline .prohlizeniEntitaFormMain > div:first-child {
+  border-left: none;
+}
+.form-small-inline .prohlizeniEntitaFormMain > div:last-child {
+  padding-left: 8pt;
+}
+.form-small-inline .prohlizeniEntitaFormMain > div {
+  padding: 2px 4px;
+}
+.rozvrhFiltrForm.form-small-inline {
+  border-left: 2px solid #8c8c8c;
+}
+
+.rozvrhFiltrForm.form-small-inline .prohlizeniEntitaFormMain > .pull-left {
+  border-left: 2px solid #8c8c8c;
+}
+.rozvrhFiltrForm.form-small-inline .prohlizeniEntitaFormMain > :first-child.pull-left {
+  border-left: none;
+}
+
+.form-small-inline .prohlizeniEntitaFormMain {
+  display:flex;
+  flex-direction: row ;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.form-vertical .form-group > label, .form-vertical .form-group > span {
+  display: block;
+}
+.form-vertical input[type=submit] {
+  margin-top: 19px;
+}
+.b form select {
+  padding: 2px 0;
+}
+
+
+/* HTML5 formulare*/
+/* input pro 1-2 znaky */
+input.size-1 {
+  width: 45px;
+}
+/* selecty s prilis dlouhym obsahem omezime... mobilne pak jeste na vic */
+.limit-width {
+  max-width: 450px;
+}
+
+.text-semibold {
+  text-shadow : 0 0 0;
+}
+.text-larger {
+  font-size: 120%;
+}
+
+/* Napul specificke, napul obecne...*/
+
+.terminy-list {
+  background-color: #97c8e8;
+  border: 1px solid #005a96;
+  display: inline-block;
+}
+.terminy-header a.xg_stag_a_det, .terminy-header a.xg_stag_a_det:active, .terminy-header a.xg_stag_a_det:visited {
+    color: #ffc600;
+}
+.terminy-header span {
+  padding-left: 5px;
+}
+.terminy-header {
+  font-weight: bold;
+  color: white;
+  background-color: #005a96;
+  padding: 3px;
+  box-shadow: inset 1px  1px 0 0 #78a0c6, inset 2px 2px #2168a0;
+}
+.terminy-header .obsazeni {
+  white-space: nowrap;
+}
+.terminy-termin {
+  padding: 0 2px;
+}
+.terminy-termin > div:first-child {
+  min-width: 72px;
+}
+.terminy-termin > div {
+  padding: 2px;
+}
+
+/* legenda pro terminy (barvicky vs stav terminu) */
+.termin_legenda {
+  margin: 3px 0 0 0 !important;
+}
+.termin_legenda .row div {
+  border: 1px solid #005a96;
+  padding-top: 2px;
+}
+.termin_stav_platny {
+  background-color: #f2d997;
+  box-shadow: inset 1px  1px 0 0 #a5a566, inset 2px 2px #ffffdf;
+}
+.termin_stav_zruseny {
+  background-color: #fdba99;
+  box-shadow: inset 1px  1px 0 0 #b95e45, inset 2px 2px #fdd7c4;
+}
+.termin_stav_prosly {
+  background-color: #bbbbbb;
+  box-shadow: inset 1px  1px 0 0 #5f5f5f, inset 2px 2px #dbdbdb;
+}
+.termin_stav_blokace {
+  background-color: #99fdb8;
+  box-shadow: inset 1px  1px 0 0 #47834d, inset 2px 2px #c9fcc5;
+}
+
+/* falesna tabulka, na malych zarizenich se rozlame a bude z toho zpatky to co puvodne */
+.fake-table { display: table; }
+.fake-table > .fake-table-row { display: table-row; }
+.fake-table > .fake-table-row > .fake-table-cell { display: table-cell; }
+
+/* tabiky se s border-box modelem trosku rozbily */
+.b .xgt_tp_table {
+  padding-top: 2px;
+}
+.b .xgt_tp_table > span {
+  padding-bottom: 3px;
+  display: inline-block;
+  white-space: normal;
+}
+.xgt_tp_table a {
+  font-size: 1.6rem !important;
+}
+.xgt_tp_table > .stag_tab_page_heading_selected  > a {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+/* Portlet specific */
+
+/* Prohlizeni*/
+
+/* Navigace */
+.prohlizeni_portlet .prohlizeni_nav_wrapper {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+  vertical-align: top;
+  padding-right: 9px;
+}
+.prohlizeni_portlet .prohlizeni_nav_wrapper a {
+  font-size: 1.2rem;
+}
+
+.prohlizeni_portlet .prohlizeni_main_nav {
+  background-color: #c3c3c3;
+  color: black;
+}
+.prohlizeni_portlet .prohlizeni_nav_wrapper li {
+  border-color: #b0b0b0;
+  border-color: #dfdfdf #b0b0b0 #b0b0b0 #dfdfdf;
+  border-style: solid;
+  border-width: 1px;
+  padding: 1px 2px 2px 12px;
+  background: #d0d0d0 url("/zdroje/images/stag/icons/carney_the_nonradioactive.gif") no-repeat scroll left center;
+}
+.prohlizeni_portlet .prohlizeni_nav_wrapper li.selected {
+    background: #dbd9d9 url("/zdroje/images/stag/icons/carney_the_radioactive.gif") no-repeat scroll left center;
+    border-bottom: medium none;
+    border-top: medium none;
+}
+.prohlizeni_portlet .prohlizeni_nav_wrapper li.selected a {
+  color: black;
+}
+.prohlizeni_portlet .prohlizeni_nav_wrapper li a {
+  text-decoration: none;
+  display: block;
+}
+.prohlizeni_portlet .prohlizeni_nav_wrapper li.disabled a {
+  color: #555;
+}
+.prohlizeni_portlet .prohlizeni_nav_wrapper li.empty {
+  background-image:  none;
+}
+
+/* Uvodni stranka prohlizeni */
+.prohlizeni_start_page .row {
+  /*padding: 0 15px;*/
+  clear: both;
+  background-color: white;
+}
+.prohlizeni_start_page .row > div {
+  padding-left: 0;
+}
+.prohlizeni_start_page .row > div.right {
+  padding-right: 0;
+}
+.prohlizeni_start_page .row > div > div {
+  background: url("/zdroje/images/stag/icons/titulkaIcoBack.png") no-repeat scroll right top;
+  padding: 0 50px 0 0px;
+  text-align: right;
+}
+.prohlizeni_start_page .row > div.right > div {
+  background: url("/zdroje/images/stag/icons/titulkaIcoBack.png") no-repeat scroll left top;
+  padding: 0 0px 0 50px;
+  text-align: left;
+}
+.prohlizeni_start_page .itemHiddentrue {
+  font-weight: bold;
+  background-color: #D8D9D9
+}
+
+/* Header od prohlizeni */
+.prohlizeni_portlet .prohlizeniEntitaHead_left h3, .prohlizeni_portlet .prohlizeniEntitaHead_left h2 {
+  margin: 0;
+  padding: 0 5px 6px 6px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: white;
+  background-color: #494949;
+}
+.prohlizeni_portlet .prohlizeniEntitaHead {
+  padding-top: 4px;
+}
+.prohlizeni_portlet .popover {
+  max-width: 350px;
+  overflow: hidden;
+}
+.prohlizeni_portlet .popover h3 {
+  color: #000;
+}
+.prohlizeni_portlet .popover a {
+  white-space: normal;
+}
+
+/* ikonky pro exporty a tak... v zahlavi */
+.b .suggestBtn:focus {
+  border: 2px dashed #fff;
+  background-position: -2px -2px;
+}
+.b .xg_ro_21:focus, .b .xg_ro_31:focus, .b .has-text.xg_ro_21 span, .b .has-text.xg_ro_31 span {
+  outline: 2px dashed #fff;
+}
+.b .xg_ro_21, .b .xg_ro_31, .b .has-text.xg_ro_21 span, .b .has-text.xg_ro_31 span {
+  height: 21px;
+  display:block;
+  float: left;
+  margin: 0 2px 0 2px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.b .has-text.xg_ro_21,.b .has-text.xg_ro_31 {
+  height: auto;
+  width: auto;
+  display: block;
+  float: left;
+  margin: 0 2px 0 2px;
+}
+.b .xg_stag_a_in.has-text.xg_ro_21,.b .xg_stag_a_in.has-text.xg_ro_31  {
+  background-position: right;
+}
+.b .xg_ro_21, .b .has-text.xg_ro_21 span {
+  width: 21px;
+}
+
+.xg_ro_21:hover, .has-text.xg_ro_21:hover span {
+    background-position: -21px 0;
+}
+
+.b .xg_ro_31, .b .has-text.xg_ro_31 span {
+  width: 31px;
+}
+
+.xg_ro_31:hover, .has-text.xg_ro_31:hover span {
+  background-position: -31px 0;
+}
+
+/* Vyhledavaci fomrulare */
+.form-group {
+  padding-left: 5px;
+}
+
+/* Vysledky vyhledavani */
+.b .prohlizeniEntitaContent label {
+  font-weight: normal;
+}
+
+
+
+
+/* Prihlasovani na terminy */
+table.ng_tab.terminy-table td {
+
+}
+table.ng_tab.terminy-table {
+  border: none;
+}
+.ng_tab td, .ng_tab th {
+  border-left: none;
+}
+.terminy-wrapper {
+  display: table;
+  border: 1px solid #dbd9d9;
+}
+
+/* barva odkazu na detail terminu, na ktery jsem prihlaseny*/
+a.terminy-prihlasen_true,
+a.terminy-prihlasen_true:active,
+a.terminy-prihlasen_true:visited,
+a.terminy-prihlasen_true:hover {
+  color: #FF4E5C;
+}
+/* podbarevni terminu, na ktery jsem zapsany */
+tr.zebra.terminy-zapsan_true td {
+  /*background-color: green;*/
+}
+tr.terminy-zapsan_true td {
+  background-color: #FFD2C2;
+  border-color: #F9B8A8;
+}
+tr.terminy-obsazen_true td, .terminy-obsazen_true, div.terminy-wrapper tr.terminy-obsazen_true .zebra {
+  background-color: #aeaeae;
+  border-color: #aeaeae;
+}
+.terminy-prihlasovani_N {
+  color: red;
+}
+.terminy-volnych-6, .terminy-volnych-5 {
+  background-color: #FFE3E3;
+}
+.terminy-volnych-4, .terminy-volnych-3 {
+  background-color: #FFB0B0;
+}
+.terminy-volnych-2, .terminy-volnych-1, .terminy-volnych-0 {
+  background-color: #FF7070;
+}
+
+tr:first-child.terminy-novy_predmet_true td {
+  border-top: none;
+}
+tr.terminy-novy_predmet_true td {
+  padding: 10px 5px;
+  border-top: 5px solid #fff;
+}
+
+tr.terminy-termin-row td:first-child {
+  background-color: white;
+}
+
+div.terminy-wrapper div.left-pad {
+  padding-left: 10px; padding-right: 5px;
+}
+div.terminy-course-detail {
+  display: flex;
+}
+.terminy-course-detail-popis{
+  flex-grow: 1;
+}
+.terminy-course-detail-prihlaseni {
+
+}
+.terminy-course-detail-row {
+
+}
+div.terminy-course-detail, div.terminy-course-prihlaseni {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+div.terminy-termin-row-predmet {
+  padding: 10px 5px;
+}
+.terminy-termin-row-predmet a {
+  font-size: 110% !important;
+}
+tr.terminy-termin-row-1 td.hideForDesktop {
+  padding-bottom: 0;
+}
+tr.terminy-termin-row-2 td.hideForDesktop {
+  padding-top: 0;
+  margin-bottom: 20px;
+}
+tr.terminy-termin-row-3 td {
+  padding:0;
+}
+div.terminy-wrapper .zebra {
+  background-color: #f4f2f2;
+}
+div.terminy-zapsan_true, div.terminy-zapsan_true.zebra {
+  background-color: #FFD2C2;
+}
+
+/* NG_ (x3ho new-gui) variace */
+.ng_portletCoat h3 {
+  margin: 0;
+  padding: 6px 6px 5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #494949;
+  /* reset a fallback */
+  background: #f1f1db;
+  /* gradient */
+  background-image: linear-gradient(to right, #ddddba, #ddddba 1px, #e4e4c9 1px, #f8f8f8 220px);
+}
+.ng_portletCoat h3 small {
+  color: #494949;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.ng_portletCoat h3 small span {
+  padding-top: 4px;
+}
+
+/* upravene ng_form pro fake tabulky */
+.ng_form_tab {
+  padding: 0;
+  margin: 0;
+  border-collapse: separate;
+}
+
+.ng_form_tab .fake-table-cell-header {
+  padding: 2px 4px 2px 3px;
+  background-color: #F4F2F2;
+  border-left: none;
+  border-right: 2px solid #CECCCC;
+  border-top: 1px solid white;
+  text-align: right;
+  white-space: nowrap;
+  font-weight: normal;
+  display: table-cell;
+  vertical-align: middle;
+}
+.ng_form_tab .fake-table-cell-header.head {
+  padding: 2px 4px 3px 5px;
+  border: none;
+  background: transparent url("/zdroje/css/xgui/ng_form_table_head_1c.png") repeat-y scroll left top;
+  text-align: left;
+  white-space: nowrap;
+  font-weight: bold;
+  color: #494949;
+}
+
+.ng_form_tab .subhead {
+  /*    font-family: Arial,Tahoma,"Trebuchet MS",sans-serif; */
+  white-space: normal;
+
+  padding: 2px 4px 1px 12px;
+  border: none;
+  border-bottom: 2px solid #e4e4c9;
+  background: transparent url("/zdroje/css/xgui/ng_form_table_subhead-centered.png") no-repeat scroll left center;
+  text-align: left;
+
+  color: #707070;
+  font-size: 10px;
+}
+
+.ng_form_tab .ng_form_noback {
+  text-align: left;
+  border: none;
+  background-color: transparent;
+}
+
+.ng_form_tab .fake-table-cell {
+  border: none;
+  border-top: 1px solid #F4F2F2;
+  padding: 3px 3px;
+  text-align: left;
+  vertical-align: top;
+  font-weight: normal;
+  color: #444444;
+  background-color: white;
+}
+.b .ng_form_tab .text-right {
+  text-align: right;
+}
+
+.ng_form_tab .fake-table-cell-header  {
+  padding: 2px 4px 2px 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .ng_form_tab .fake-table-cell-header, .ng_form_tab .fake-table-cell {
+    padding: 0 4px 0 4px;
+  }
+}
+
+
+/* By Konzerva jednotlive typy, aby pomocne buttony ve formularich vypadaly jako buttony. */
+/* nevypoustet TD ! */
+.ng_form_tab .fake-table-cell input[type=checkbox],
+.ng_form_tab .fake-table-cell input[type=file],
+.ng_form_tab .fake-table-cell input[type=password],
+
+.ng_form_tab .fake-table-cell input[type=text],
+.ng_form_tab .fake-table-cell input[type=email],
+.ng_form_tab .fake-table-cell input[type=number],
+.ng_form_tab .fake-table-cell textarea,
+.ng_form_tab .fake-table-cell select{
+  border-top:     1px solid #abadb3;
+  border-bottom:  1px solid #e3e9ef;
+  border-left:    1px solid #e2e3ea;
+  border-right:   1px solid #dbdfe6;
+  background: #ffffee url("/zdroje/css/xgui/ng_input_back.png") no-repeat scroll left top;
+  padding: 2px 6px 2px 6px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+
+/* nerusit background - mozz nadrazenou definici nezere... */
+.ng_form_tab select {
+  background: url("/zdroje/css/xgui/ng_input_back.png") no-repeat scroll left top;
+  padding: 0 0 0 1px;
+}
+
+/* By Konzerva - cervene oramovane kdyz je chyba ve formulari, je treba napsat takhle, protoze kdyby bylo jen .pv_field_input_error tak to
+bude prebity */
+.ng_form_tab .fake-table-cell input.pv_field_input_error,    /* nevypoustet TD ! */
+.ng_form_tab .fake-table-cell select.pv_field_input_error,   /* nevypoustet TH ! */
+.ng_form_tab .fake-table-cell input.validation-failed,    /*  by carney bueeeee, tohle je prece spatne!! musi existovat lepsi zpusob, prinejhorsim input.validation-failed: border: 2px solid #FF2020 !important; */
+.ng_form_tab .fake-table-cell select.validation-failed {
+  border: 2px solid #FF2020;
+}
+
+/* nerusit background - mozz nadrazenou definici nezere... */
+.ng_form_tab select.pv_field_input_error{
+  border: 2px solid #FF2020;
+}
+
+.ng_form_tab option{
+  background: #ffffee;
+}
+
+.ng_form_tab input.xg_dohledavac,
+.ng_form_tab input.xg_calendar {
+  background-image: url("/zdroje/css/xgui/ng_dohledavac_ico.png");
+  border-left: none;
+  cursor: pointer;
+  margin: 3px 0 0 0;
+  padding: 0;
+  height: 20px;
+  width: 18px;
+  position: relative;
+  left: -1px;
+}
+
+.b .btn .xg_dohledavac {
+  background-image: url('/zdroje/css/xgui/dohledavac_ico_bootstrap.gif');
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.ng_form_tab input.xg_calendar {
+  background-image: url("/zdroje/css/xgui/ng_datepicker_ico.png");
+  width: 26px;
+  height: 19px;
+}
+
+.ng_form_tab .fake-table-cell-header span.info,     /* pozor nelze rozsirit na pouhe td span - tlouklo by se s pouzitim span ve formvalidatoru v beznem td  */
+.ng_form_tab .fake-table-cell span.info,     /* pozor nelze rozsirit na pouhe th span - tlouklo by se s pouzitim span ve formvalidatoru v beznem th  */
+.ng_form_tab .fake-table-cell-header.head span {
+  font-family: Arial,Tahoma,"Trebuchet MS",sans-serif;
+  font-weight: normal;
+  color: #686868;
+  font-size: 11px;
+}
+
+.ng_form_tab .fake-table-cell div.xg_msgFromServerDefault,
+.ng_form_tab .fake-table-cell-header div.xg_msgFromServerDefault {
+  background: none;
+  border: none;
+  font-family: Arial,Tahoma,"Trebuchet MS",sans-serif;
+  font-weight: normal;
+  white-space: normal;
+  margin: 0;
+  padding: 0;
+  color: #808080;
+}
+
+
+
+/* bootstrap accordion... */
+.panel .collapse-icon:before {
+  content: "\2212";
+}
+.ng_portletCoat .panel-heading {
+  margin: 0;
+  /*margin-bottom: 7px;*/
+  padding: 6px 6px 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #494949;
+  background: #f1f1db;
+  background-image: none;
+  background-image: linear-gradient(to right, #ddddba, #ddddba 1px, #e4e4c9 1px, #f8f8f8 220px);
+}
+
+.ng_portletCoat .panel-heading-collapse {
+  cursor: pointer;
+}
+.ng_portletCoat .panel-heading h2 {
+  background-image: linear-gradient(to right, #e4e4c9, #e4e4c9 1px, #f8f8f8 220px);
+}
+.panel .collapsed .collapse-icon:before {
+  content: "\002b";
+}
+
+.icon-placeholder {
+  display: inline-block;
+  width:16px;
+}
+.row-actions-dropddown {
+  float: right;
+}
+.b .row-actions-dropddown .dropdown-menu {
+  font-size: 16px;
+}
+
+/* jednoduche formatovani seznamu polozek */
+ul.ng_plain_list {
+  padding-inline-start: 5px;
+  padding-inline-end: 10px;
+}
+
+ul.ng_plain_list li {
+  list-style-type: none;
+  margin: 3px;
+  max-width: 400px;
+}
+
+ul.ng_plain_list li div.ng_plain_header {
+  white-space: nowrap;
+  font-weight: bold;
+  color: #333333;
+  padding: 8px;
+  margin-top: 10px;
+
+  border: none;
+  background: #dadbc0b3;
+  text-align: left;
+  font-size: 11px;
+}
+
+ul.ng_plain_list li ul {
+  padding-inline-start: 10px;
+}
+
+ul.ng_plain_list li.ng_fire_pale {
+  background-color: white !important;
+  padding: 0;
+}
+
+ul.ng_plain_list li.ng_fire_pale button {
+  padding: 4px;
+  margin: 0;
+}
+
+.ng_fire_pale button:disabled {
+  color: #aea79f;
+  border-color: #aea79f;
+}
+
+.ng_fire_pale button:focus {
+  outline-style: dotted;
+}
+
+/* Mobilne-responsivni upravy */
+
+/* Sirky bootstrap grid containeru */
+@media (min-width: 768px) {
+  .app_page_multi .b .container {
+    width: 588px; /* 812 - 180. 812 je bootstrap default, 180 je sirka leveho menu */
+  }
+}
+@media (min-width: 992px) {
+  .app_page_multi .b .container {
+    width: 790px;
+  }
+}
+@media (min-width: 1200px) {
+  .app_page_multi .b .container {
+    width: 980px; /* 1170 - 180. 1170 je bootstrap default, 180 je sirka leveho menu */
+  }
+}
+
+/* Na vetsich  displejich navigace vedle obsahu, jinak je do bloku... */
+@media (min-width: 768px) {
+  .prohlizeni_portlet {
+    display: flex;
+  }
+  .prohlizeni_portlet .prohlizeni_nav_wrapper {
+    min-width: 172px;
+    flex: 0;
+  }
+  .prohlizeni_portlet .prohlizeni_content_wrapper {
+    display: table-cell;
+    flex: 1;
+  }
+  .prohlizeni_start_page {
+    max-width: 800px;
+  }
+  .table-reflow .mainCellClone {
+    display: none;
+  }
+}
+
+/* Tabletove upravy */
+@media (max-width: 992px) {
+    /* Zvetsit pismo tu i onde, mrnavy to je dost... */
+  div.xg_portletCoat, div.prohlizeniEntitaSearched, .xg_portletCoat .submit {
+    font-size: inherit;
+  }
+  .xg_tab th, .xg_tab td, .xg_tab_c th, .xg_tab_c td, .xg_tab_S th, .xg_tab_S td, .xg_tab_c_S th, .xg_tab_c_S td,
+  .xg_pane th, .xg_pane td {
+    font-size: inherit;
+    white-space: normal;
+  }
+  a.xg_stag_a_det, a.xg_stag_a_det:active, a.xg_stag_a_det:visited, a.xg_stag_a_det:hover, a.xg_stag_a_det_S, a.xg_stag_a_det_S:active, a.xg_stag_a_det_S:visited, a.xg_stag_a_det_S:hover, a.xg_stag_a_det_tool, a.xg_stag_a_det_tool:active, a.xg_stag_a_det_tool:visited, a.xg_stag_a_det_tool:hover, a.xg_stag_a_det_tool_S, a.xg_stag_a_det_tool_S:active, a.xg_stag_a_det_tool_S:visited, a.xg_stag_a_det_tool_S:hover, a.xg_stag_a_out, a.xg_stag_a_out:active, a.xg_stag_a_out:visited, a.xg_stag_a_out:hover, a.xg_stag_a_out_S, a.xg_stag_a_out_S:active, a.xg_stag_a_out_S:visited, a.xg_stag_a_out_S:hover, a.xg_stag_a_in, a.xg_stag_a_in:active, a.xg_stag_a_in:visited, a.xg_stag_a_in:hover, a.xg_stag_a_in_S, a.xg_stag_a_in_S:active, a.xg_stag_a_in_S:visited, a.xg_stag_a_in_S:hover, a.xg_stag_a_mail, a.xg_stag_a_mail:active, a.xg_stag_a_mail:visited, a.xg_stag_a_mail:hover, a.xg_stag_a_mail_S, a.xg_stag_a_mail_S:active, a.xg_stag_a_mail_S:visited, a.xg_stag_a_mail_S:hover, a.xg_stag_a_ent, a.xg_stag_a_ent:active, a.xg_stag_a_ent:visited, a.xg_stag_a_ent:hover, a.xg_stag_a_ent_S, a.xg_stag_a_ent_S:active, a.xg_stag_a_ent_S:visited, a.xg_stag_a_ent_S:hover, a.xg_stag_a_print, a.xg_stag_a_print:active, a.xg_stag_a_print:visited, a.xg_stag_a_print:hover, a.xg_stag_a_print_S, a.xg_stag_a_print_S:active, a.xg_stag_a_print_S:visited, a.xg_stag_a_print_S:hover, div.prohlizeniEntitaSubdetailTabSelected  {
+    font-size: 13px;
+    white-space: normal;
+  }
+
+  /* V navigaci porhlizeni jeste trochu... */
+  .prohlizeni_portlet .prohlizeni_nav_wrapper {
+    font-size: 13px !important;
+  }
+  .prohlizeni_portlet .prohlizeni_nav_wrapper a {
+    font-size: 13px !important;
+  }
+    /* Strankovani trochu zvetsit */
+  div.str_coat {
+    padding: 3px 0;
+  }
+  .str_coat span a {
+    border: 1px solid #adadad;
+  }
+  .str_coat a, .str_coat .str_page_act {
+    padding: 5px 10px;
+    margin: 3px;
+    line-height: 30px;
+    vertical-align: middle;
+  }
+  .str_page_act {
+    border: none;
+  }
+  img.xg_icon_str {
+    vertical-align: inherit;
+  }
+
+}
+/*Telefonove upravy*/
+@media (max-width: 768px) {
+  .icon-placeholder {
+    display: none;
+  }
+  .fake-table, .fake-table > .fake-table-row, .fake-table > .fake-table-row > .fake-table-cell { display: inherit; }
+  div.fake-table, div.fake-table > div.fake-table-row, div.fake-table > div.fake-table-row > div.fake-table-cell { display: block; }
+  /*div.fake-table.ng_form_tab > div.fake-table-row > div.fake-table-cell { text-align: center }   */
+  /*.fake-table-row { display: table-row; }*/
+  /*.fake-table-row { display: table-row; }*/
+  /*.fake-table-cell { display: table-cell; }*/
+
+  /* UserInfoPortlet */
+  .st-uc-info2 .fake-table-cell {
+    padding: 5px;
+  }
+  .st-uc-info2 > .right-border {
+    border: none;
+    border-bottom: 2px solid #b4b48b;
+  }
+  .b div.xgt_tp_table {
+    margin-bottom: 0;
+  }
+
+  li.ui-menu-item {
+    font-size: 17px;
+    padding: 5px;
+  }
+
+  .ng_form_tab.flexTable2Cols tr > :nth-child(2n),  .ng_tab.flexTable2Cols tr > :nth-child(2n)  {
+    display: block;
+  }
+
+  .ng_form_tab.flexTable2Cols tr td input[type='text'],
+  .ng_form_tab.flexTable2Cols tr td input[type='number'],
+  .ng_form_tab.flexTable2Cols tr td select {
+    min-width: 98%;
+  }
+
+  .ng_form_tab .fake-table-cell-header, .b.ng_portletCoat form .form-group label {
+    font-size: 14px;
+    padding-bottom: 2px;
+    background-color: white;
+    white-space: normal;
+    font-weight: bold;
+  }
+
+  /*.ng_form_tab .fake-table-cell {
+    font-size: 12px;
+    padding: 2px;
+  }
+
+  .ng_form_tab .fake-table-cell-header {
+    font-size: 12px;
+    padding: 4px;
+    padding-top: 6px;
+  }*/
+
+/* Prohlizeni */
+/* titulka prohlizeni - odkazy pod sebe... */
+  .prohlizeni_start_page .row > div > div {
+    background: url("/zdroje/images/stag/icons/titulkaIcoBack.png") no-repeat scroll left top;
+    padding: 0 0px 0 50px;
+    text-align: left;
+  }
+  /* S trochou odsazeni */
+  .prohlizeni_start_page .row > div {
+    padding: 0 0px 10px 0px;
+  }
+
+  div.xgt_tp_table span:first-child {
+    margin-left: 0;
+  }
+
+  /* Zvetsit pismo tu i onde, mrnavy to je dost... */
+  div.prohlizeniEntitaSubdetailTabSelected, div.prohlizeniEntitaSubdetailTab a, div.prohlizeniEntitaSubdetailTabSelected a.xg_stag_a_det, div.prohlizeniEntitaSubdetailTab a.xg_stag_a_det, .xgt_tp_table > span
+  {
+      font-size: 16px !important;
+  }
+  .xgt_tp_table > span {
+    line-height: 1.6em;
+  }
+  /* V navigaci porhlizeni jeste trochu... */
+  .prohlizeni_portlet .prohlizeni_nav_wrapper {
+    font-size: 16px !important;
+  }
+  .prohlizeni_portlet .prohlizeni_nav_wrapper a {
+    font-size: 16px !important;
+  }
+
+/* nektery selecty maji opravdu dlouhy obsah, tak aby nam neutikaly...*/
+  select, .limit-width {
+    max-width: 270px;
+  }
+
+  .limit-width-s {
+    max-width: 170px;
+  }
+
+
+  td.spreadOnMobile, th.spreadOnMobile {
+    width: 1000px;
+  }
+
+  .spreadInputs input {
+    width: 100%;
+  }
+
+  .ng_form_tab .fake-table-cell {
+    border: none;
+  }
+
+  /* Sortovac */
+  .b td.sortable, .b th.sortable,
+  .b .sortable-text,
+  .b .sortable-localeText,
+  .b .sortable-date,
+  .b .sortable-keep,
+  .b .sortable-date-dmy,
+  .b .sortable-datetime-dmyhms,
+  .b .sortable-numeric,
+  .b .sortable-currency,
+  .b .sortable-sortByTwelveHourTimestamp,
+  .b .sortable-sortIPAddress,
+  .b .sortable-sortEnglishLonghandDateFormat,
+  .b .sortable-sortScientificNotation,
+  .b .sortable-sortImage,
+  .b .sortable-sortFileSize,
+  .b .sortable-textInSpan,
+  .b .sortable-localeTextInSpan,
+  .b .sortable-numberInSpan
+   {
+      background-image: url("/zdroje/css/xgui/xg_tab_S_th_bcg_nosort.png");
+      padding-left: 3px;
+  }
+
+  /* exporty... */
+  .b .export_pdf_bw { display: none; }
+  .b .export_excel { display: none; }
+  .b .export_csv { display: none; }
+
+
+  /* okynko s vysledky vyhledavani bude fullsize */
+  div.prohlizeniEntitaSearched {
+      background-color: #dbd9d9;
+      height: inherit;
+      overflow: auto;
+  }
+  .resizeGrippie {
+    display:none;
+  }
+  .xg_stag_a_det_S {
+    /*display: block;*/
+  }
+
+/* Obsah - detail entity */
+/*  tabulku nakraji na dva sloupecky */
+  .flexTable2Cols tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flexTable2Cols tr > *:nth-child(1n) {
+    display: flex;
+    flex-basis: 40%;
+    flex-grow: 1;
+  }
+  .flexTable2Cols tr > *:nth-child(2n) {
+    display: flex;
+    flex-basis: 60%;
+    flex-grow: 1;
+  }
+  .flexTable2Cols th, .flexTable2Cols th span {
+    text-align: left;
+  }
+  /* oprava XGUI */
+  .xg_pane th.top {
+    text-align: left;
+  }
+
+
+
+/* Vysledky vyhledavani, tabulka, ktera je tam jenom kvuli peknemu formatu. Na maly dispolej se nevejde, takze se umisti th a td do radky */
+  .responsiveTable > tr, .responsiveTable > tbody > tr, .responsiveTable > thead > tr {
+    display:block;
+  }
+  .responsiveTable > tr > th, .responsiveTable > tbody > tr > th, .prohlizeniEntitaSubdetailCoat > tr > td, .prohlizeniEntitaSubdetailCoat > tbody > td {
+    display: inline-block;
+    float: left;
+  }
+  .responsiveTable > tr, .responsiveTable > tr > th, .responsiveTable > tbody > tr, .responsiveTable > tbody > tr > th {
+    clear: both;
+  }
+  .xg_pane th, .xg_pane th.top, .xg_pane th.brutalforce {
+    white-space: normal;
+  }
+
+  /* Rozvrhy, formular */
+  .rozvrhFiltrForm.form-small-inline .prohlizeniEntitaFormMain {
+    display: block;
+  }
+  .rozvrhFiltrForm.form-small-inline .prohlizeniEntitaFormMain .pull-left .form-group {
+    display: inline-block;
+  }
+  /* nektery kousky rozvrhu nezobrazovat... */
+  .rozvrhItemLineUcitel {
+    display:none;
+  }
+  div.rozvrhItemLineNekonaSe {
+    white-space: normal;
+    font-size: inherit;
+  }
+  .xg_stag_a_rozvrhToolB {
+    display:none;
+  }
+
+/* setrime misto v sortovacich tabulkach, nezobrazujeme klikaci obrazky, sortovani stejne nefunguje */
+  .xg_tab.sortable-onload-cookies th {
+    background-image: none !important;
+    background-color: #D9D9D9 !important;
+    padding-left: inherit  !important;
+  }
+
+  .ng_tab.sortable-onload-cookies th {
+    /*background-image: inherit !important;*/
+    /*background-color: red !important;*/
+    /*padding-left: inherit  !important;*/
+  }
+
+  /* Vyresetovat defaultni chovani bootstrapu */
+  .b .keep-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  /* Naseptavac... */
+  .ui-dialog {
+    max-width: 95%;
+    top: 0; left: 0;
+    margin: auto;
+  }
+  .ui-dialog-content {
+    height: auto !important;
+  }
+
+  div.xg_naseptavac li {
+      padding: 5px 0;
+  }
+
+  /* Presklada tabulku do jednoho sloupce - hlavicka bude zvyraznena, bunky budou pod sebou*/
+  table.table-reflow {
+    width: 100%;
+  }
+  table.table-reflow caption { background-image: none; }
+  table.table-reflow thead { display: none; }
+  table.table-reflow tbody td {
+    display: block; padding: .6rem;
+  }
+  table.table-reflow tbody tr td:first-child {
+    background: #D9D9D9;
+  }
+  table.ng_tab.table-reflow tbody tr td:first-child {
+    background: #D9D9D9;
+  }
+  table.table-reflow tbody td:before {
+    content: attr(data-header) "\00a0 ";
+    font-weight: bold;
+    display: inline-block;
+  }
+  .table-reflow td, .table-reflow th, .table-reflow .text-center {
+    text-align: left;
+  }
+  .table-reflow .mainCell {
+    display: none;
+  }
+
+
+  .table-scroll {
+    overflow-x: scroll;
+    overflow-y: auto;
+    max-width: 100vw;
+  }
+
+  .xg_tab th, .xg_tab td, .xg_tab_c th, .xg_tab_c td, .xg_tab_S th, .xg_tab_S td, .xg_tab_c_S th, .xg_tab_c_S td, .xg_pane th, .xg_pane td,
+  .ng_tab th, .ng_tab td, .ng_tab_c th, .ng_tab_c td {
+    font-size: 14px;
+    padding: 2px 3px;
+  }
+
+  /* NG_GUI */
+
+  table.ng_form_tab th, table.ng_form_tab th.head {
+    white-space: normal;
+  }
+
+  /* Sortovac */
+  .b .ng_tab td.sortable, .b th.sortable,
+  .b .ng_tab .sortable-text,
+  .b .ng_tab .sortable-localeText,
+  .b .ng_tab .sortable-date,
+  .b .ng_tab .sortable-keep,
+  .b .ng_tab .sortable-date-dmy,
+  .b .ng_tab .sortable-datetime-dmyhms,
+  .b .ng_tab .sortable-numeric,
+  .b .ng_tab .sortable-currency,
+  .b .ng_tab .sortable-sortByTwelveHourTimestamp,
+  .b .ng_tab .sortable-sortIPAddress,
+  .b .ng_tab .sortable-sortEnglishLonghandDateFormat,
+  .b .ng_tab .sortable-sortScientificNotation,
+  .b .ng_tab .sortable-sortImage,
+  .b .ng_tab .sortable-sortFileSize,
+  .b .ng_tab .sortable-textInSpan,
+  .b .ng_tab .sortable-localeTextInSpan,
+  .b .ng_tab .sortable-numberInSpan
+  {
+    background-image: url("/zdroje/css/xgui/ng_tab_th_bcg.png");
+    padding-left: 3px;
+  }
+
+  .ng_form_tab .fake-table-cell input[type=checkbox],
+  .ng_form_tab .fake-table-cell input[type=file],
+  .ng_form_tab .fake-table-cell input[type=password],
+  /*.ng_form_tab .fake-table-cell input[type=radio], */
+  .ng_form_tab .fake-table-cell input[type=text],
+  .ng_form_tab .fake-table-cell input[type=number],
+  .ng_form_tab .fake-table-cell input[type=submit],
+  .ng_form_tab .fake-table-cell input[type=button],
+  .ng_form_tab .fake-table-cell button[type=submit],
+  .ng_form_tab .fake-table-cell textarea,
+  .ng_form_tab .fake-table-cell select{
+    min-width: 100%; /* TODO pridano */
+    font-size: 15px;
+    max-width: 270px;
+    border: 2px solid #e0e0e0;
+    border-radius: 2px;
+    padding: 7px 6px;    !important;
+  }
+
+  .ng_form_tab .fake-table-cell {
+    font-size: 15px;
+  }
+
+  .ng_form_tab .fake-table-cell input[type=radio] {
+    min-width: 10%;
+  }
+
+  .ng_form_tab .fake-table-cell span.notEditableInput {
+    padding: 6px 6px 6px 15px;
+    display: block;
+  }
+
+
+
+  /* .ng_form_tab.fake-table > .fake-table-row > .fake-table-cell {
+     display: block;
+     text-align: center;
+   }*/
+  .ng_form_tab .fake-table-cell input[type=submit],
+  .ng_form_tab .fake-table-cell button[type=submit],
+  .ng_form_tab .fake-table-cell input[type=button] {
+    min-width: 100px;
+  }
+
+  .ng_form_tab .fake-table-cell input[type=button].xg_calendar {
+        min-width: 0; !important;
+  }
+
+
+
+  /*.ng_form_tab .fake-table-cell select {
+    max-width: 270px;
+  }*/
+
+  .ng_form_tab .fake-table-cell-header {
+    /*border-bottom: 2px solid #CECCCC;*/
+    border-right: none;
+    text-align: left;
+    display: block;
+  }
+
+  .ng_form_tab .fake-table-cell-header label {
+    padding-top: 10px;
+    padding-left: 3px;
+    white-space: normal;
+  }
+
+  .ng_form_tab .fake-table-cell label {
+    font-size: 15px;
+  }
+
+
+
+
+  /* CY GUI */
+  div.cy_searchFormResults {
+    max-height: none;
+  }
+
+  .b .cy_searchFormResults td label {
+    margin-bottom: 0;
+  }
+
+  div.calendar, div.calendar table {
+    font-size: 14px;
+  }
+  .calendar tbody td.day {
+    padding: 4px 6px 4px 6px;
+  }
+
+  /* mobilni upravy pro jednoduche formatovani seznamu polozek */
+  ul.ng_plain_list li,
+  ul.ng_plain_list li div.ng_plain_header {
+    font-size: 14px;
+  }
+}
+
+

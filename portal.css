@@ -1,0 +1,867 @@
+/* Former app_container.css */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    font-family: Tahoma,Arial,Helvetica,sans-serif;
+}
+/*
+https://www.google.com/search?q=html+font+size+rem+px
+Pro zacatek - 62.5% odpovida resetu na 10px (prohlizece maji 100% = 16px)
+Potom lze velikosti zapisovat jako 1.2rem a bude to 12px...
+ */
+html {
+  font-size: 62.5%;
+}
+
+
+body {
+  background-color: white;
+  font-size: 1.3rem;
+}
+
+a, a:active, a:visited, a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #23549b;
+}
+
+/* Kolize s .btn... */
+/*
+.b a, .b a:active, .b a:visited, .b a:hover {
+    color: #23549b;
+}
+
+a:hover, .b a:hover {
+    color: #183259;
+}
+*/
+
+div.app_container {
+    background: url("../img/app_container_back.png") repeat-y scroll 0 0 white;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-collapse: collapse;
+    display: table;
+}
+
+/* POKUD JE STRANKA PORTALU V SINGLE MODU, musi byt deploynut tento modifikator... */
+div.app_container-modif_single {
+    background-image: none !important;
+}
+
+.render_container {
+  width: 100%;
+}
+
+
+/* Former app_header.css */
+div.app_header {
+    background-color: #23549b;
+    border-top: none;
+    padding: 13px 13px 15px 13px;
+}
+
+div.app_header div.app_header_left,
+div.app_header div.app_header_center,
+div.app_header div.app_header_right {
+}
+
+div.app_header div.app_header_left, div.app_header div.app_header_center{
+    float: left;
+}
+
+div.app_header_left a, div.app_header_center a {
+  display: block;
+  height: 59px;
+}
+
+div.app_header_left a {
+  width: 150px;
+}
+
+div.app_header_center a {
+  width: 200px;
+}
+
+div.app_header div.app_header_center {
+    border-left: 1px solid white;
+}
+
+div.app_header div.app_header_right {
+    float: right;
+    padding-left: 13px;
+    padding-right: 0;
+    text-align: right;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: black;
+}
+
+div.app_header div.app_header_right a {
+    color: white;
+    text-decoration: none;
+    padding-right: 8px;
+}
+
+div.app_header div.app_header_right a:hover, div.app_header div.app_header_right a:focus {
+    color: #bedde8;
+    text-decoration: none;
+}
+
+div.app_container-modif_lang-cs div.app_header div.app_header_left {
+    background: url("../img/logo_cs.png") no-repeat scroll 0 0 transparent;
+}
+
+div.app_container-modif_lang-en div.app_header div.app_header_left {
+    background: url("../img/logo_en.png") no-repeat scroll 0 0 transparent;
+}
+
+div.app_container-modif_lang-cs div.app_header div.app_header_center {
+    background: url("../img/portal_cs.png") no-repeat scroll 0 0 transparent;
+}
+
+div.app_container-modif_lang-en div.app_header div.app_header_center {
+    background: url("../img/portal_en.png") no-repeat scroll 0 0 transparent;
+}
+
+div.app_header div.app_header_right {
+    text-decoration: none;
+    text-transform: none;
+    font-size: 1.2rem;
+}
+
+div.app_header div.app_header_right div.upper a {
+    border: 1px solid #4881d0;
+    background-color: #132D52;
+    color: #F0F0F5;
+    padding: 2px 8px;
+}
+
+div.app_header div.app_header_right div.upper a:hover {
+    background-color: #23549b;
+    color: white;
+}
+
+div.app_header div.app_header_right div.upper .falseLink {
+    background-color: #F0F0F5;
+    color: #444;
+    font-weight: normal;
+    border-right: none;
+    padding-right: 0;
+}
+
+div.app_header div.app_header_right div.upper .falseLink span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* X3 8.4.2015 - reflasterizace pro 2-urovnovou horizontalni navigaci na ZCU */
+div.app_header div.app_header_right div.lower {
+    padding-top: 4px;
+}
+
+div.app_header div.app_header_right div.upper .falseLink span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+div.app_header div.app_header_right div.lower {
+    padding-top: 4px;
+}
+
+div.lower a.link_out {
+    padding-right: 16px !important;
+    background: url("../img/link_out/link_out_h.png") no-repeat scroll 100% 65% transparent;
+}
+
+div.lower a.link_out:hover {
+    padding-right: 16px !important;
+    background: url("../img/link_out/link_out_h_hover.png") no-repeat scroll 100% 65% transparent;
+}
+
+
+/* Former app_menu.css */
+ul.app_menubar {
+    background-color: #132d52;
+    border-top: 1px solid #3c6bae;
+    color: #d3e1f3;
+    font-family: Arial,Tahoma,Helvetica,sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 169px;
+    text-align: left;
+    border-bottom: 1px solid #e8f3ff;
+}
+
+ul.app_menubar li {
+    display: inline-block;
+    margin: 0;
+    border-left: 1px solid #324a6f;
+    border-right: none; /* 1px solid #0F2441; */
+}
+
+ul.app_menubar li:hover {
+  background-color: #23549b; /* Q ZCU SKIN */
+    color: #f0f0f5;
+    border-top: 1px solid #23549b; /* ZCU SKIN */
+    border-left: 1px solid #3c6bae;  /* ZCU SKIN */
+    border-right: none; /*1px solid #2b4264;*/
+}
+
+ul.app_menubar li:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+ul.app_menubar li:first-child {
+    border-left: 1px solid #132d52;
+}
+
+ul.app_menubar li.disabled,
+ul.app_menubar li.disabled a,
+ul.app_menubar li.disabled:hover {
+    cursor: inherit;
+    background-color: inherit;
+    color: #6c8fc9 !important;
+}
+
+ul.app_menubar li.selected a,
+ul.app_menubar li.selected a:active,
+ul.app_menubar li.selected a:visited {
+    font-weight: inherit;
+    text-decoration: none;
+    color: #132d52; /* ZCU SKIN */
+}
+
+ul.app_menubar li.selected {
+    background-color: #d1e6ff;
+    color: #23549b;
+    border-top: 1px solid #92afd6; /* ZCU SKIN */
+    border-bottom: 1px solid #d1e6ff;
+    border-left: 1px solid #e8f3ff;
+  margin-bottom: -1px;
+}
+
+ul.app_menubar li a,
+ul.app_menubar li a:active,
+ul.app_menubar li a:visited,
+ul.app_menubar li a:hover {
+    padding: 2px 9px 3px;
+  display: inline-block;
+}
+
+ul.app_menubar li a,
+ul.app_menubar li a:active,
+ul.app_menubar li a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+ul.app_menubar li:hover a,
+ul.app_menubar li:hover a:active,
+ul.app_menubar li:hover a:visited {
+    color: white;
+}
+
+ul.app_menubar li.selected a,
+ul.app_menubar li.selected a:active,
+ul.app_menubar li.selected a:visited {
+    color: #132d52;
+}
+
+ul.app_menubar li a:hover {
+    text-decoration: none;
+}
+
+/* X3 8.4.2015 - reflasterizace pro 2-urovnovou horizontalni navigaci na ZCU */
+
+ul.level_1 {
+    background-color: #d1e6ff;
+    border-top: 2px solid #d1e6ff;
+    color: #132d52;
+    border-bottom: 1px solid #a3bee0;
+    padding-top: 1px;
+    padding-bottom: 0;
+}
+
+ul.level_1 li {
+    border-left: 1px solid #d1e6ff;
+    border-right: 1px solid #d1e6ff;
+    border-top: 1px solid #d1e6ff;
+    padding: 3px 0 3px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+ul.level_1 li:first-child {
+    border-left: 1px solid #d1e6ff;
+    margin-left: 0;
+}
+
+ul.level_1 li:last-child {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+ul.level_1 li {
+}
+ul.level_1 li:hover,
+ul.level_1 li.selected {
+    background-color: #f0f0f5;
+    border-left: 1px solid #a3bee0;
+    border-right: 1px solid #c9dcf5;
+    border-top: 1px solid #a3bee0;
+    color: #132d52;
+}
+
+ul.level_1 li.disabled,
+ul.level_1 li.disabled a,
+ul.level_1 li.disabled:hover {
+    color: #696969 !important;
+}
+
+ul.level_1 li:hover a,
+ul.level_1 li:hover a:active,
+ul.level_1 li:hover a:visited {
+    color: black;
+}
+
+ul.level_1 li a,
+ul.level_1 li a:active,
+ul.level_1 li a:visited,
+ul.level_1 li.selected a,
+ul.level_1 li.selected a:active,
+ul.level_1 li.selected a:visited,
+ul.level_1 li.selected:hover a,
+ul.level_1 li.selected:hover a:active,
+ul.level_1 li.selected:hover a:visited {
+    color: #132d52;
+}
+
+ul.level_1 li a span.link_out {
+    padding-right: 16px !important;
+    background: url("../img/link_out/link_out_h_l1.png") no-repeat scroll 100% 65% transparent;
+}
+
+ul.level_1 li a span.link_out:hover {
+    padding-right: 16px !important;
+    background: url("../img/link_out/link_out_h_l1_hover.png") no-repeat scroll 100% 65% transparent;
+}
+
+ul.level_1.app_menubar li.selected, ul.level_1.app_menubar li:hover {
+  margin-bottom: -1px;
+  border-bottom: 1px solid #f0f0f5;
+}
+
+/* Former app_content.css */
+div.app_content {
+    border-top: 7px solid #F0F0F5;
+}
+
+div.app_page_single {
+}
+
+div.app_page_multi {
+
+}
+
+div.app_page_menu {
+    width: 169px;
+    float: left;
+  background-color: #f0f0f5;
+}
+
+div.app_page_menu ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+div.app_page_menu ul li {
+    border-bottom: 1px solid #e6e5e5;
+    line-height: 2.6rem;
+}
+
+div.app_page_menu ul li:last-child {
+    border-bottom: none;
+}
+
+div.app_page_menu ul li:first-child {
+    border-top: 1px solid #F0F0F5;
+}
+
+div.app_page_menu ul li.selected {
+    background-color: #ffffff;
+}
+
+div.app_page_menu ul li.selected a {
+    border-left: 7px solid #23549b; /* ZCU SKIN */
+}
+
+div.app_page_menu ul li a {
+    color: inherit;
+    font-weight: normal;
+    /* cursor: pointer; */
+    text-decoration: none;
+    display: block;
+    border-left: 7px solid #f0f0f5;
+    padding-left: 7px;
+}
+
+div.app_page_menu ul li a:hover {
+    color: #23549b; /* ZCU SKIN */
+
+    background-color: #e6e6ef;
+    border-left: 7px solid #23549b; /* ZCU SKIN */
+}
+
+div.app_page_menu ul li ul li,
+div.app_page_menu ul li ul li ul li,
+div.app_page_menu ul li ul li ul li ul li {
+    border-bottom: 1px solid #e6e5e5;
+    border-left: 7px solid #f0f0f5;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+}
+
+div.app_page_menu ul li.rolled_down,
+div.app_page_menu ul li.rolled_down ul li.rolled_down ul {
+    background-color: transparent;
+    border-left: 7px solid #f0f0f5;
+}
+
+div.app_page_menu ul li.selected:hover {
+    background-color: #ffffff;
+}
+
+div.app_page_menu ul li.selected:first-child {
+    border-top: 1px solid #E6E5E5;
+}
+
+div.app_page_menu ul li.rolled_down ul li:first-child {
+    border-top: none;
+}
+
+/* ------------------------ */
+
+div.app_page_single div.app_page_content {
+    background-color: white;
+    margin-bottom: 0;
+}
+
+div.app_page_multi div.app_page_content {
+    margin-left:169px;
+}
+
+div.app_page_content {
+    border-top: 1px solid #E6E5E5;
+    margin-bottom: 7px;
+    padding: 0 7px 7px;
+}
+
+@media only screen and (max-width: 768px) {
+    div.app_page_content {
+        padding: 0 0 7px 0;
+    }
+}
+
+table.app_portlet_frame_out {
+    border-spacing:0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.app_portlet_frame_out > tbody > tr > td {
+  width: 100%;
+    vertical-align: top;
+    padding: 0 7px 0 0;
+}
+
+table.app_portlet_frame_out > tbody > tr > td:last-child {
+    padding-right: 0;
+}
+
+table.app_portlet_frame_out td {
+}
+
+table.app_portlet_frame_in {
+    border-spacing:0;
+    /* border-collapse: collapse; NE-E, pak by nefungoval podrizeny padding */
+    border-collapse: separate;
+    width: 100%;
+    padding: 7px 0 0 0;
+}
+
+table.app_portlet_frame_in:first-child {
+}
+
+td.app_portlet_head_title,
+td.app_portlet_head_icons {
+    background-color: #23549b;
+    color: #F5F5F5;
+    padding: 1px 2px 1px 4px;
+}
+
+td.app_portlet_head_title {
+    text-align: left;
+}
+.app_portlet_head_title h2 {
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+td.app_portlet_head_icons {
+    text-align: right;
+    padding: 0;
+    font-size: 0;
+}
+
+td.app_portlet_head_icons img {
+    border-left: 1px solid #F5F5F5;
+}
+
+td.app_portlet_coat {
+    /*background-color: #F0F0F5;*/
+    border: 1px solid #E6E5E5;
+    border-top: none;
+    /*padding: 0 1px 1px 1px;*/
+}
+
+td.app_portlet_coat > div {
+    background-color: white;
+    /*padding: 0 4px 4px 4px;*/
+}
+
+div.app_page_menu ul li.rolled_down_head,
+div.app_page_menu ul li.rolled_down ul li.rolled_down_head {
+    background-color: transparent;
+    font-weight: bold;
+    color: #23549b;
+}
+
+div.app_page_menu ul li.rolled_down_head {
+    border-left: 14px solid #f0f0f5;
+}
+
+div.app_page_menu ul li.rolled_down ul li.rolled_down_head {
+    border-left: 21px solid #f0f0f5;
+}
+
+table.modif_isSingle td.app_portlet_head_title,
+table.modif_isSingle td.app_portlet_head_icons {
+    /* background-color: transparent; */
+}
+
+table.modif_isSingle td.app_portlet_coat {
+    border: none;
+    background-color: transparent;
+}
+
+table.modif_isSingle td.app_portlet_coat > div {
+    padding: 0;
+}
+
+
+ul.app_menubar li a span.link_out,
+ul.app_menubar li.selected a span.link_out,
+
+div.app_page_menu ul li a span.link_out,
+div.app_page_menu ul li a:hover span.link_out,
+div.app_page_menu ul li.selected a span.link_out {
+    padding-right: 16px;
+}
+
+div.app_page_menu ul li a span.link_out,
+div.app_page_menu ul li.selected a span.link_out {
+    background: url("../img/link_out/link_out_v.png") no-repeat scroll 100% 65% transparent;
+}
+
+div.app_page_menu ul li a:hover span.link_out {
+    background: url("../img/link_out/link_out_v_hover.png") no-repeat scroll 100% 65% transparent;
+}
+
+ul.app_menubar li a span.link_out,
+ul.app_menubar li.selected a span.link_out {
+    background: url("../img/link_out/link_out_h.png") no-repeat scroll 100% 50% transparent;
+}
+
+ul.app_menubar li a:hover span.link_out,
+ul.app_menubar li.selected a:hover span.link_out {
+    background: url("../img/link_out/link_out_h.png") no-repeat scroll 100% 50% transparent;
+}
+
+ul.level_1 li a span.link_out,
+ul.level_1 li.selected a span.link_out {
+    background: url("../img/link_out/link_out_h_l1.png") no-repeat scroll 100% 50% transparent;
+}
+
+ul.level_1 li a:hover span.link_out,
+ul.level_1 li.selected a:hover span.link_out {
+    background: url("../img/link_out/link_out_h_l1_hover.png") no-repeat scroll 100% 50% transparent;
+}
+
+
+/* Former app_foter.css */
+/* POKUD JE STRANKA PORTALU V SINGLE MODU, mel byt deploynut tento modifikator... (Pokud je primarni zapati nejak vyuzito)) */
+div.app_footer_primary-modif_single {
+    margin-left: 0 !important;
+}
+
+div.app_footer {
+  display: table-footer-group;
+  vertical-align: bottom;
+
+  margin-top: 13px;
+  background-color: #F0F0F5;
+}
+
+div.app_footer_primary {
+    border-top: 1px solid #E6E5E5;
+    margin-left: 169px;
+    height: 3px;
+    vertical-align: middle;
+}
+
+div.app_footer_secondary {
+    height: 199px;
+    border-top: 1px solid #D1D1D9;
+    background-color: #e6e6ef;
+    display: table-row;
+
+    /* bug se zalomenim spodku, docasne reseni */
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+div.app_footer_tertiary {
+    display: table-footer-group;
+    vertical-align: bottom;
+    background-color: #fff;
+}
+div.app_footer_tertiary div {padding: 13px; }
+
+div.app_footer_tertiary p {
+    margin: 0;
+    padding: 0;
+}
+div.app_footer_tertiary p a {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+div.footer_header {
+    float: left;
+    /* bug se zalomenim spodku, docasne reseni */
+    display: inline-block;
+    vertical-align: top;
+  margin: 13px 0 0 13px;
+}
+
+div.footer_header a {
+  height: 59px;
+  width: 156px;
+  display: block;
+}
+
+div.app_container-modif_lang-cs div.app_footer div.app_footer_secondary div.footer_header {
+    background: url("../img/footer_cs.png") no-repeat scroll 0 0 transparent;
+}
+
+div.app_container-modif_lang-en div.app_footer div.app_footer_secondary div.footer_header {
+    background: url("../img/footer_en.png") no-repeat scroll 0 0 transparent;
+}
+.app_footer_col_wrapper {
+  height: 199px;
+  overflow: hidden;
+}
+div.footer_column {
+    padding: 0 4em 1em 0;
+    /* bug se zalomenim spodku, docasne reseni */
+  display: block;
+  float: left;
+}
+
+div.footer_column a {
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-decoration: none;
+    color: #9f9fa3;
+}
+
+div.footer_column a:hover {
+    color: black;
+}
+
+div.footer_column h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #8f8f93;
+}
+
+div.footer_column ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+div.footer_column:hover ul li a {
+    color: black;
+}
+
+div.footer_column:hover ul li a:hover {
+    color: #23549b;
+}
+
+div.mobile_desktop_switch {
+    background-color: #f0f0f5; display: table-footer-group; margin-top: 13px; vertical-align: bottom;
+}
+
+
+/* Tiskove styly */
+@media print {
+    /*  Portal theme printing */
+    body, div.app_container, div.app_header {
+        background: none !important;
+        background-color: transparent !important;
+    }
+    div.app_container {
+        display: block !important;
+    }
+
+    div#myAffix, div.app_menu, div.mobile_menu, div.app_header_wrapper, div.app_page_menu, .app_footer, div.mobile_desktop_switch {
+        display: none !important;
+    }
+    div.app_content {
+        border-top: none !important;
+    }
+    div.app_page_multi, div.app_page_content {
+        margin-left: 0 !important;
+        border-top: none !important;
+    }
+    .zcu_mainContentTable {
+        vertical-align:text-top !important;
+        border:none !important;
+    }
+    .zcu_mainContentTable { vertical-align: inherit !important; } /* Tohle je dost dulezity a stalo to spoustu casu :/ */
+
+
+    /* Common HTML stuff
+    */
+    body,td,th {
+        margin:  0;
+        padding: 0;
+        font-size: 10pt;
+        color: black;
+    }
+    a {
+
+        color: black;
+        text-decoration: none;
+
+    }
+
+    img {
+        display:none;
+    }
+    .ng_portletContentCoat img {
+        display: inherit;
+    }
+
+    a:hover,a:visited,a:active {
+
+        color: black;
+    }
+    /*  Portlets specific stuff
+    */
+    td.app_portlet_coat {
+        border: none;
+    }
+    .zalomeni {
+        page-break-after: always;
+    }
+
+    .noprint {
+        display: none;
+    }
+    .print {
+        display: block;
+        text-align : right;
+        margin: 1em;
+    }
+
+    .rozvrhTabulkaTisk td {
+
+        margin:  3px;
+        padding: 3px;
+        font-size: 7pt;
+        color: black;
+    }
+
+    .rozvrhTabulkaTisk th {
+
+        margin:  3px;
+        padding: 3px;
+        font-size: 8pt;
+        color: black;
+    }
+
+    div.rozvrhRoakOdDoHSpacer div.rozvrhRoakZacatek_zkouska, div.rozvrhRoakOdDoHSpacer div.rozvrhRoakKonec_zkouska {
+        display: inline-block !important;
+    }
+    .prohlizeni_nav_wrapper {
+        display: none;
+    }
+
+    xg_portletCoat table {
+
+    }
+
+    .xg_pane td,
+    .xg_pane th {
+        font-size: 11px;
+        font-weight: normal;
+        text-align: left;
+        vertical-align: top;
+        padding: 2px 4px 2px 3px;
+    }
+
+}
+
+/* Accessibility block */
+/* Jak neco zobrazit jenom pro ctecku (schovat normalnimi uzivateli, nabidnout pro ctecku pred skryte nadpisy a popisky) */
+.a11y_hidden {
+    color: transparent;
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+/* Jak neco schovat pred ctecou*/
+/* Na to trida neni, pouzijte aria-hidden="true" */
+
+/* Jak neco zase ukazat, kdyz na to prijde focus (odkaz na preskok rovnou do obsahu), mozno kombinovat s a11y_hidden */
+.a11y_focusable:focus {
+  color: #fff;
+  background-color: #23549b;
+
+  font-size: 16px;
+    padding: 10px 20px;
+    position: absolute;
+    display: block;
+    left:auto;
+    top:auto;
+    width:auto;
+    height:auto;
+    overflow:auto;
+    z-index: 1000;
+}

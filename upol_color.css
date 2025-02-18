@@ -1,0 +1,253 @@
+/* Ukazka a sablona pro customizaci... Veci, co jsou tady je "temer vzdy" potreba zmenit kdyz se prida nova skola. */
+
+/* Odkazy maji skoro vzdy jinou barvu. Lze rozdelit podle pseudotrid... */
+a,
+a:active,
+a:visited,
+a:hover, .b a {
+    font-weight: bold;
+    color: black;
+}
+html, body {
+  height: inherit;
+}
+
+body {
+  padding: 16px;
+}
+
+.a11y_focusable:focus {
+  color: #fff;
+  background-color: #0164a5;
+}
+
+/* Zahlavi cele stranky */
+div.app_header {
+    background-color: #0164a5;
+    border-top: none;
+    border-bottom: none;
+    padding: 0;
+    background: url("portal/img/portal_hlavicka_prechod.png") repeat  0 0;
+}
+
+.mobile_nav_menu_service_links {
+  background: url("portal/img/portal_hlavicka_prechod.png") repeat  0 0;
+}
+.mobile_menu .mobile_nav_menu_service_links a, .mobile_menu .mobile_nav_menu_service_links .falseLink {
+ color: white;
+}
+.mobile_menu .mobile_nav_menu_service_links select {
+  color: #000;
+}
+
+div.app_header div.app_header_right {
+  padding: 10px;
+}
+.mobile_header_wrapper div.app_header div.app_header_right {
+  padding: 0;
+}
+
+/* logo univerzity a portalu, tohle je treba prizpusobit skutecne velikosti obrazku */
+
+/* rozmery nastavovat odkazum s logem, obalujici divy se prizpusobi!*/
+div.app_header_left a,div.app_header_center a { height: 92px; }
+div.app_header_left a { width: 106px; }
+div.app_header_center a { width: 394px; }
+
+
+div.app_header div.app_header_center {
+  border-left: none;
+}
+
+div.app_container-modif_lang-cs div.app_header div.app_header_left {
+  background: transparent url("portal/img/logo_cs.png") no-repeat scroll 0 0;
+}
+
+div.app_container-modif_lang-cs div.app_header div.app_header_center {
+  background: transparent url("portal/img/portal_cs.png") no-repeat scroll 0 0;
+}
+
+div.app_container-modif_lang-en div.app_header div.app_header_left {
+  background: transparent url("portal/img/logo_cs.png") no-repeat scroll 0 0;
+}
+
+div.app_container-modif_lang-en div.app_header div.app_header_center {
+  background: transparent url("portal/img/portal_en.png") no-repeat scroll 0 0;
+}
+
+/* servisni odkazy vpravo nahore */
+/* prihlaseni,  odhlaseni*/
+div.app_header div.app_header_right div.upper a {
+  border: 1px solid #e6e5e5;
+  background-color: #006faf;
+  color: #fff;
+}
+div.app_header div.app_header_right div.upper a:hover {
+  background-color: #025685;
+}
+
+div.app_header div.app_header_right div.upper .falseLink {
+  border: 1px solid #e6e5e5;
+  background-color: white;
+}
+
+/* administrace a spol. */
+div.app_header div.app_header_right a {
+  color:  #C5C0C0;
+}
+div.app_header div.app_header_right a:hover {
+  color: #fff;
+}
+div.lower a.link_out {
+    background-image: url("portal/img/link_out/link_out_v.png");
+}
+div.lower a.link_out:hover {
+    background-image: url("portal/img/link_out/link_out_v_hover.png");
+}
+
+
+
+/* Horni menu horizontalni (nahore) */
+ul.app_menubar {
+  background-color: #0164a5;
+  border-top: none;
+  border-bottom: none;
+}
+ul.app_menubar li {
+    border: none;
+}
+ul.app_menubar li:first-child {
+  border-left: none;
+}
+ul.app_menubar li:hover {
+    background-color: #025685;
+    color: white;
+}
+ul.app_menubar li.selected {
+    color: #424242;
+}
+
+ul.app_menubar li a,
+ul.app_menubar li a:visited,
+ul.app_menubar li a:active,
+ul.app_menubar li a:hover,
+ul.app_menubar li a:hover:visited {
+  color: #fff;
+}
+ul.app_menubar li.selected a,
+ul.app_menubar li.selected a:active,
+ul.app_menubar li.selected a:visited {
+    color: black;
+}
+
+ul.level_1.app_menubar li.selected, ul.level_1.app_menubar li:hover {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+ul.level_1 li:first-child {
+    border-left: none;
+}
+ul.level_1 li.selected:hover a,
+ul.level_1 li.selected:hover a:active,
+ul.level_1 li.selected:hover a:visited {
+    color: black;
+    background-color: #F0F0F5;
+}
+
+/* Menu vertikalni (po strane) */
+div.app_page_menu ul li.selected a, .mobile_nav_menu_accordion a.selected {
+  border-left: 7px solid #0164a5;
+}
+div.app_page_menu ul li a:hover {
+    color: black;
+    background-color: #e6e6ef;
+    border-left: 7px solid #0164a5;
+}
+
+
+
+.b.app_header_wrapper span.app_header_center {
+  color: #fff;
+}
+
+.b .mobileNav .btn {
+  background-color: #006faf;
+  border-color: #e6e5e5;
+  color: #fff;
+}
+.b .mobileNav .btn:focus, .b .mobileNav .btn.focus {
+  background-color: #025685;
+  border-color: #e6e5e5;
+  color: #fff;
+}
+.b .mobileNav .btn:hover {
+  background-color: #025685;
+  border-color: #e6e5e5;
+  color: #fff;
+}
+.b .mobileNav .btn:active, .b .mobileNav .btn.active {
+  background-color: #025685;
+  border-color: #e6e5e5;
+  color: #fff;
+}
+.b .mobileNav .btn:active:hover, .b .mobileNav .btn.active:hover, .b .mobileNav .btn:active:focus, .b .mobileNav .btn.active:focus,  .b .btn.focus:active, .b .btn.active.focus {
+  background-color: #025685;
+  border-color: #e6e5e5;
+  color: #fff;
+}
+
+.mobile_menu .falseLink, .mobile_menu :hover.falseLink {
+  color: #000;
+}
+.mobile_nav_menu ul {
+  background-color: #006faf;
+}
+
+.mobile_nav_menu ul li a, .mobile_nav_menu ul li a:visited {
+  color: #000;
+  background-color: #e6e6ef;
+}
+
+.mobile_nav_menu ul li a.collapsed  , .mobile_nav_menu ul li a.collapsed:visited {
+  background-color: #006faf;
+  color: #fff;
+}
+
+.mobileNav ul.dropdown-menu  li.selected a {
+  border-left: 7px solid #006faf;
+  background-color: #fff;
+}
+
+#mobile_nav_menu_accordion a .glyphicon {
+  color: #006faf;
+}
+
+
+
+td.app_portlet_head_title,
+td.app_portlet_head_icons {
+  background-color: #5D5E60;
+  color: #DDDDDD;
+}
+
+
+
+/* Ctyri obrazkova loga pro mensi okno... */
+@media only screen and (max-width: 660px) {
+
+  body { padding: 0; }
+
+  /*div.app_header div.app_header_left a, div.app_header div.app_header_center a { height: 30px; }*/
+
+  div.app_header div.app_header_left a { width: 32px; }
+  div.app_header div.app_header_center a { width: 128px; }
+
+  div.app_container-modif_lang-cs div.app_header div.app_header_left { background-image: url("portal/img/logo_cs_small.png"); }
+  div.app_container-modif_lang-en div.app_header div.app_header_left { background-image: url("portal/img/logo_en_small.png") }
+  div.app_container-modif_lang-cs div.app_header div.app_header_center { background-image: url("portal/img/portal_cs_small.png"); }
+  div.app_container-modif_lang-en div.app_header div.app_header_center { background-image: url("portal/img/portal_en_small.png"); }
+
+}

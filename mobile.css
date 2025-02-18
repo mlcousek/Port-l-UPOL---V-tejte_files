@@ -1,0 +1,302 @@
+/* responsivne-mobilny upravy pro portalove tema + utility tridy pro bezne pouziti... */
+.mobileNavWrapper {
+  padding-left: 6px;
+  padding-bottom: 6px;
+  background-color: #F0F0F5;
+}
+
+.affix .app_header_wrapper {
+  /*display: table;*/
+}
+.affix .app_header_wrapper .app_header {
+  /*display: table-row;*/
+}
+.affix .app_header_wrapper .app_header .app_header_cell {
+
+  /*display: table-cell;*/
+  /*margin: 0;*/
+  /*padding: 0;*/
+}
+
+.mobileNav  {
+  /*margin-bottom: 6px;*/
+}
+.mobileNav button {
+  margin-top: 6px;
+  /*display: none;*/
+}
+.mobileNav .dropdown, .mobileNav .glyphicon-menu-right  {
+  margin-right: 6px;
+}
+.mobileNav .glyphicon-menu-right {
+  line-height: 1.42857;
+  padding: 6px 0;
+  margin-top: 6px;
+}
+
+.mobileNav ul.dropdown-menu  li {
+  border-bottom: 1px solid #e6e5e5;
+}
+.mobileNav ul.dropdown-menu  li a {
+  border-left: 7px solid transparent;
+  padding-left: 13px;
+  background-color: #eeeef3;
+}
+
+.mobileNav ul.dropdown-menu  li.selected a {
+  border-left: 7px solid #23549b;
+  background-color: #fff;
+}
+
+
+.b .mobileNav .btn {
+    background-color: #23549b;
+    border-color: #1e4986;
+    color: #fff;
+}
+
+.b .mobileNav .btn:hover, .b .mobileNav .btn:active, .b .mobileNav .btn.active {
+    background-color: #1a3d71;
+    border-color: #132e54;
+    color: #fff;
+}
+.b .mobileNav .btn:active:hover, .b .mobileNav .btn.active:hover, .b .mobileNav .btn:active:focus, .b .mobileNav .btn.active:focus,  .b .btn.focus:active, .b .btn.active.focus {
+    background-color: #132e54;
+    border-color: #07101e;
+    color: #fff;
+}
+
+.b.app_header_wrapper span.app_header_center {
+  color: white;
+  font-weight: bold;
+  padding-left: 7px;
+  font-size: 1.4rem;
+  float: left;
+  vertical-align: middle;
+  display: inline-block;
+  padding-top: 8px;
+}
+
+
+.mobile_menu .falseLink, .mobile_menu :hover.falseLink {
+  text-decoration: none;
+}
+
+
+.mobile_nav_menu ul {
+  margin: 0;
+  padding: 0;
+  background-color: #132d52;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.mobile_nav_menu ul li {
+  display: inline-block;
+
+}
+.mobile_nav_menu ul li a {
+  padding: 2px 9px 3px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.mobile_nav_menu ul li a, .mobile_nav_menu ul li a:visited {
+  color: #132d52;
+  background-color: #d1e6ff;
+}
+
+
+.mobile_nav_menu ul li a.collapsed  , .mobile_nav_menu ul li a.collapsed:visited {
+  background-color: #132d52;
+  color: #fff;
+}
+
+.mobile_menu .modal {
+  background-color: #808080;
+}
+
+.mobile_nav_menu .modal-content {
+  border: 1px solid black;
+  margin: 0 5px;
+}
+.mobile_nav_menu_accordion {
+  overflow: auto;
+}
+.mobile_nav_menu_accordion .panel .panel {
+  padding-left: 19px;
+}
+
+.mobile_nav_menu_accordion a {
+  display: block;
+  padding: 6px 5px 7px;
+  margin: 3px 0;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #e6e5e5;
+}
+.mobile_nav_menu_accordion a:first-child {
+  margin-top: 0;
+}
+.mobile_nav_menu_accordion a:active {
+}
+.mobile_nav_menu_accordion a.page{
+}
+.mobile_nav_menu_accordion a.page.selected {
+}
+
+
+.b .mobile_nav_menu_accordion .panel {
+  background-color: #eeeef3;
+}
+
+/* rozklikavaci sipka pro podstranky */
+.mobile_nav_menu_accordion a .glyphicon {
+  margin-right: 5px;
+  color:#23549b;
+}
+
+.mobile_nav_menu_accordion a.page {
+  padding-left: 24px;
+}
+
+.mobile_nav_menu_accordion a, .mobile_nav_menu_accordion a:visited {
+  text-decoration: none;
+  color: #000;
+}
+.mobile_nav_menu_accordion a.selected {
+  padding-left: 16px;
+
+  background-color: #fff;
+  color: #000;
+  border-left: 7px solid #23549b;
+}
+
+div.mobile_menu .link_out {
+  background: url("../img/link_out/link_out_v.png") no-repeat scroll 100% 50% transparent;
+  padding: 0 16px 0 0;
+}
+
+div.mobile_menu :hover.link_out {
+  background: url("../img/link_out/link_out_v_hover.png") no-repeat scroll 100% 50% transparent;
+  padding: 0 16px 0 0;
+}
+
+
+.mobileNavWrapper { display: none; }
+
+@media only screen and (min-width: 769px) {
+  .hideForDesktop {
+    display: none !important;
+  }
+}
+
+/* prilepeno sem, protoze tenhle soubor jde jako posledni*/
+@media only screen and (max-width: 992px) {
+  .hideForTablet { display: none !important; } /* schovavacka pro tablety a mensi*/
+  /*.hideForDesktop { display: block; }*/
+  /*.mobileNav { display: block; }*/
+
+  ul.app_menubar {
+    padding-left: 7px;
+  }
+
+  div.app_header div.app_header_right div.upper a { border: none;}
+
+  div.app_content { padding: 0;   border-top-width: 1px; }
+  div.app_header, div.app_container { min-height: auto; }
+
+  /* jednosloupcovy layout nezavisle na strance */
+  .render_container, .render_container > tbody, .render_container > tbody > tr, .render_container > tbody > tr > td, .render_container > tbody > tr > th {
+    display: block;
+    white-space: normal;
+    padding-left: 0 !important;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  div.app_header { padding: 6px 6px 6px !important; min-height: inherit !important; }
+
+  div.app_header div.app_header_left a,
+  div.app_header div.app_header_center a { height: 28px; }
+
+  div.app_header div.app_header_left a { width: 28px;  }
+  div.app_header div.app_header_center a { width: 100px;  }
+  div.app_header div.app_header_left, div.app_header div.app_header_center, div.app_header div.app_header_right { height: auto; }
+  div.app_header div.app_header_left, div.app_header div.app_header_center, div.app_header div.app_header_right { margin: 4px 0 0 8px; padding: 0; }
+
+  /*div.app_header div.app_header_center img.spacer, div.app_header div.app_header_left img.spacer { height: 31px; width: auto; }*/
+  div.app_container-modif_lang-cs div.app_header div.app_header_left { background-image: url("../img/logo_cs_small.png"); }
+  div.app_container-modif_lang-en div.app_header div.app_header_left { background-image: url("../img/logo_en_small.png"); }
+  div.app_container-modif_lang-cs div.app_header div.app_header_center { background-image: url("../img/portal_cs_small.png");  }
+  div.app_container-modif_lang-en div.app_header div.app_header_center { background-image: url("../img/portal_en_small.png"); }
+
+  div.app_header div.app_header_right div { padding: 2px 0; }
+
+  div.app_page_multi div.app_page_content { min-height: auto; border: none; }
+/*
+  div.app_menu, div.app_page_menu { display: none; }
+  .mobileNavWrapper { display: block; }
+*/
+}
+
+@media only screen and (max-width: 768px) {
+  .hideForDesktop { display: block; }
+  span.hideForDesktop { display: inline; }
+  a.hideForDesktop { display: inline; }
+  tr.hideForDesktop { display: table-row; }
+  td.hideForDesktop { display: table-cell; }
+  th.hideForDesktop { display: table-cell; }
+}
+@media only screen and (max-width: 768px) {
+  /*.mobileNav { display: block; } */
+  .hideForMobile { display: none !important; } /* schovavacka pro mobily a mensi*/
+
+  div.app_container {
+    background: none;
+  }
+  div.app_page_multi > div.app_page_content {
+    margin: 0;
+  }
+  div.app_page_multi > div {
+    float: none;
+    width: auto;
+  }
+
+  ul.app_menubar, .app_page_menu ul {
+    font-size: 1.6rem;
+  }
+  ul.app_menubar {
+    padding-left: 0;
+  }
+  div.app_footer {
+    display: none;
+  }
+
+}
+
+/* Na zarizenich s malym displejem to chceme uplne normalne ukazat pro vsechny */
+.hideForDesktop.a11y_hidden {
+  background-color: inherit;
+  color: inherit;
+  display: initial !important;
+  position: initial;
+  width: auto;
+  height: auto;
+  left: auto;
+}
+
+/* Na zarizenich s velkym displejem to chceme schovat pristupne, aby to precetla ctecka */
+@media only screen and (min-width: 769px) {
+  .hideForDesktop.a11y_hidden {
+    color: transparent;
+    background-color: transparent;
+    display: initial !important; /* Z minula tu mame display:none !important; */
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+  }
+}
